@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://github.com/dinesh443/Capstone.git/index.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var firebaseConfig = {
+            apiKey: "723ba4127b209ab589b85d57cebde024cd0b2b99",
+            authDomain: "capstone-82fc4.firebaseapp.com",
+            projectId: "capstone-82fc4",
+            storageBucket: "capstone-82fc4.appspot.com",
+            messagingSenderId: "100486113188728749218",
+            appId: "1:100486113188728749218:web:723ba4127b209ab589b85d57cebde024cd0b2b99"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form action="/signin" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Sign In</button>
+    </form>
+</body>
+</html>
